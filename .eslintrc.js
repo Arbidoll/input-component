@@ -105,10 +105,10 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 'off',
     // javascript
     'prettier/prettier': [
-      "error",
+      'error',
       {
-        "endOfLine": "auto"
-      }
+        'endOfLine': 'auto',
+      },
     ],
     'prefer-spread': 'off',
     'no-return-await': 'off',
