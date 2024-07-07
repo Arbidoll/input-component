@@ -96,7 +96,6 @@ module.exports = {
       'error',
       {
         types: {
-          // eslint-disable-next-line @typescript-eslint/naming-convention
           Function: false,
         },
         extendDefaults: true,
@@ -107,7 +106,7 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        'endOfLine': 'auto',
+        endOfLine: 'auto',
       },
     ],
     'prefer-spread': 'off',
