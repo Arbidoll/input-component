@@ -18,6 +18,7 @@ export default function useInputSearchOptions<T extends object | string>(
     }
   };
 
+  // eslint-disable-next-line @typescript-eslint/naming-convention, no-underscore-dangle
   const _getOptionText = (option: T) => {
     if (option instanceof String) {
       return `${option}`;
