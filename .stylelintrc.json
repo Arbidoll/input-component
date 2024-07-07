@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-rational-order",
+    "stylelint-prettier/recommended",
+    "stylelint-config-html",
+    "stylelint-config-recommended-vue",
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": [
+    "stylelint-order",
+    "stylelint-scss"
+  ],
+  "customSyntax": "postcss-scss",
+  "overrides": [
+    {
+      "files": ".vue",
+      "customSyntax": "postcss-html"
+    }
+  ],
+  "rules": {
+    "scss/dollar-variable-pattern": "^([a-z][a-z0-9]*)((-|--)[a-z0-9]+)*$",
+    "order/properties-order": null,
+    "no-descending-specificity": null,
+    "value-no-vendor-prefix": null,
+    "property-no-vendor-prefix": null,
+    "selector-class-pattern": null,
+    "block-no-empty": true,
+    "scss/selector-no-redundant-nesting-selector": true,
+    "alpha-value-notation": null,
+    "color-function-notation": null,
+    "length-zero-no-unit": null,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global", "deep"]
+      }
+    ]
+  }
+}

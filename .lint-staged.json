@@ -1,0 +1,9 @@
+{
+  "*.(ts|vue)": [
+    "prettier --write",
+    "yarn run lint:write:diff:precommit"
+  ],
+  "*.{css,scss,sass,html,vue}": [
+    "stylelint --fix --quiet \"**/*.{css,scss,sass,html,vue}\""
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "es2022",
+    "moduleResolution": "node",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "strictPropertyInitialization": true,
+    // отключение явного указания this,
+    "noImplicitThis": false,
+    "sourceMap": true,
+    "allowUnreachableCode": true,
+    "isolatedModules": false,
+    "strict": true,
+    // Не создавать выходные файлы компилятора, такие как исходный код JavaScript,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "types": [
+      "jest",
+      "node",
+      "vite/client",
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "./.eslintrc.js",
+    "./.eslintrc.precommit.js",
+    "./**/*.ts",
+    "./**/*.vue",
+    "./.nuxt/nuxt.d.ts"
+  ],
+  "extends": "./.nuxt/tsconfig.json"
+}
